@@ -85,7 +85,11 @@ div.contato div > h1{
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
-div.contato div > div.button{
+div.contato div > a{
+  text-decoration: none;
+  color: inherit;
+}
+div.contato div a > div.button{
   padding: 0 2rem 0 0;
   margin: 1.5rem 0;
   font-size: 1rem;
@@ -94,17 +98,17 @@ div.contato div > div.button{
   border-radius: 20px;
   transition: all 250ms ease-in-out;
 }
-div.contato div div.button > span{
+div.contato div a div.button > span{
   margin-left: 1rem;
 }
-div.contato div div.button > img{
+div.contato div a div.button > img{
   width: 24px;
   background-color: rgba(255, 255, 255, 0.5);
   vertical-align: middle;
   padding: 1rem 1.5rem 1rem 1.7rem;
   filter: invert();
 }
-div.contato div > div.button:hover{
+div.contato div a > div.button:hover{
   background-color: rgba(255,255,255,1);
   color: #000;
   /* font-weight: 600; */
