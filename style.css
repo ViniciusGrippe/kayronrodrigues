@@ -21,7 +21,10 @@ div.logo{
 }
 div.logo div{
   width: 0 auto;
-  display: table-row;
+  /* display: table-cell; */
+}
+div.logo div.nome{
+  padding: 11rem 0 15rem;
 }
 div.logo div.redes-sociais{
   display: inline-block;
@@ -37,7 +40,6 @@ div.logo div.redes-sociais nav a > div{
   border-radius: 20px;
   color: white;
   padding: 1rem 1rem;
-  transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
 }
 div.logo div.redes-sociais nav a div > img {
   filter: invert();
@@ -47,11 +49,17 @@ div.logo div.redes-sociais nav a > div:hover{
   background-color: rgba(255,255,255,.07);
 }
 div.logo div > p{
-  font-size: 1.3rem;
-  padding: 11rem 0 15rem;
-  text-transform: uppercase;
   color: #fff;
+  text-transform: uppercase;
   letter-spacing: 19px;
+}
+div.logo div > p:last-child{
+  font-size: .9rem;
+  letter-spacing: 12px;
+  margin-top: 1.5rem;
+}
+div.logo div > p:first-child{
+  font-size: 1.5rem;
 }
 .arrow{
   display: inline-flex !important;
@@ -96,7 +104,6 @@ div.contato div a > div.button{
   /* text-align: center; */
   background-color: rgba(255,255,255,0.1);
   border-radius: 20px;
-  transition: all 250ms ease-in-out;
 }
 div.contato div a div.button > span{
   margin-left: 1rem;
@@ -190,7 +197,6 @@ div.servs div.wrap > div.see_more{
   width: 87%;
   text-align: center;
   margin-bottom: 70px;
-  transition: all 250ms ease;
 }
 div.servs div.wrap > div.see_more:hover{
   background-color: rgba(255,255,255,1);
