@@ -310,11 +310,16 @@ header div > div{
   ul{
     text-align: center;
   }
-
+  div.contato > div, div.contato{
+    display: grid;
+  }
+  div.contato div p{
+    padding-bottom: 25px;
+  }
 }
 @media screen and (max-width: 710px) {
   .contmov{
-    height: 550px;
+    height: 600px;
   }
   div.intro{
     padding-right: 2rem;
@@ -342,6 +347,9 @@ header div > div{
 }
 
 @media screen and (max-width: 520px) {
+  .contmov{
+    height: 710px;
+  }
   div.quote{
     width: 75%;
     min-width: none;
