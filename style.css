@@ -265,8 +265,14 @@ div.abstract{
   color: #000;
   background-color: #fff;
   text-align: center;
-  grid-template-columns: minmax(auto, 300px) minmax(auto, 300px);
   padding: 5rem;
+}
+div.abstract > h1{
+  z-index: 0;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  max-width: 700px;
+  /* padding-left: 4rem; */
 }
 div.abstract > div.wrap{
   background-color: #fff;
@@ -357,13 +363,10 @@ header div > div{
     height: 630px;
   }
   .contmov:before{
-    top: 525px;
-    width: 66%;
-    left: -6.3%;
+    top: 510px;
   }
   .contmov:after{
-    top: 570px;
-    right: -8%;
+    top: 555px;
   }
   div.intro{
     padding-right: 2rem;
