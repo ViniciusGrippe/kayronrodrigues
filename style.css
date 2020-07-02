@@ -5,6 +5,7 @@
 html{
   scroll-behavior: smooth;
   background-color: #000;
+  font-family: 'Playfair Display', serif;
   overflow-x: hidden;
 }
 .bg-text{
@@ -101,6 +102,7 @@ div.contato div > a{
 div.contato div a > div.button{
   padding: 0 2rem 0 0;
   margin: 1rem 0;
+  font-weight: 400;
   font-size: 1rem;
   /* text-align: center; */
   background-color: rgba(255,255,255,0.1);
