@@ -358,9 +358,9 @@ div.abstract div.wrap > img{
 }
 header{
   font-size: 1rem;
-  padding: 5rem 0 4rem 0;
-  background-color: #f1f1f1;
-  /* color: #999; */
+  padding: 6rem 0 4rem 0;
+  background-color: #000;
+  color: #fff;
 }
 header > p{
   display: block;
@@ -372,6 +372,9 @@ header > div{
   display: table;
   width: 100%;
   text-align: center;
+}
+header p > img{
+  filter: invert();
 }
 ul{
   list-style: none;
@@ -390,7 +393,7 @@ header div div > h4{
   padding-bottom: 1rem;
 }
 header div > div{
-  width: 200px;
+  width: 210px;
   vertical-align: top;
   text-align: left;
   display: inline-block;
