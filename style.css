@@ -2,6 +2,10 @@
   margin: 0;
   font-family: 'Playfair Display', serif;
 }
+body{
+  overflow-x: hidden;
+  position: relative;
+}
 html{
   scroll-behavior: smooth;
   background-color: #000;
@@ -299,7 +303,7 @@ div.quote{
   margin-top: -120px;
   position: absolute;
   right: 0;
-  padding: 3rem;
+  padding: 3rem 3rem 4rem 4rem;
   border-radius: 40px 0 0 40px;
   background-color: #fff;
   background-image: url(imgs/kayron.jpg);
@@ -309,8 +313,8 @@ div.quote{
   background-position: 400px bottom;
 }
 div.quote > div.me{
-  width: 33%;
-  padding: 1rem 2rem ;
+  /* width: 33%; */
+  /* padding: 1rem 2rem ; */
   max-width: 350px;
 }
 div.quote div.me > p.especialidade{
@@ -453,9 +457,9 @@ header div > div{
     padding: 0 2rem;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 750px) {
   .contmov{
-    height: 650px;
+    height: 0px;
   }
   .contmov:before{
     top: 510px;
@@ -477,14 +481,15 @@ header div > div{
   }
   div.quote > div.me{
     max-width: none;
+    margin: 0 auto;
     width: 90%;
     padding-bottom: 0;
   }
   div.quote div.me > img{
     display: block;
-    width: 300px;
-    margin-left: 15%;
-    margin-top: 50px;
+    width: 400px;
+    padding-top: 4rem;
+    margin: 0 auto;
   }
 }
 
@@ -500,23 +505,21 @@ header div > div{
     padding: 2rem 0;
   }
   div.quote div.me > img{
-    margin-left: 0;
-    width: 290px;
+    width: 300px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .contmov{
-    height: 710px;
+    height: 800px;
   }
   .contmov::after, .contmov::before{
     display: none;
   }
   div.quote > div.me{
-    width: 210px;
   }
   div.quote div.me > img{
-    width: 250px;
+    width: 300px;
   }
   header > p{
     padding-right: 2rem;
