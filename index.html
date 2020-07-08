@@ -111,11 +111,12 @@
   </div>
 
   <div class="cont contato">
-    <div class="" data-aos="fade-up">
-      <h1>Entre em Contato</h1>
-      <p>Facilite nosso diálogo através dos meios de comunicação ao lado.</p>
-    </div>
-    <div class="">
+    <div class="cont_links">
+      <div class="" data-aos="fade-up">
+        <h1>Entre em Contato</h1>
+        <p>Facilite nosso diálogo através dos meios de comunicação ao lado ou envie uma mensagem pelo formulário abaixo:</p>
+      </div>
+      <div class="">
       <a href="mailto:kayronrodrigues.adv@gmail.com">
       <div class="button" data-aos="fade-left" data-aos-delay="200">
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAAEM0lEQVR4Ae2aS4wMQRjHrawE6xHxOuGIxHqLG1YQQTg5eKyzcJA4IRIRB0QicWCRSMQrhCORiDh4hEQ8rh7JxutkPeJNWH7/2flmazo9s909PXa2p77k39VV/VXV9/3r66rqmunXz4tnwDPgGfAMeAY8A54Bz0B9MtAQcLuJ/FwwGgSfBVT7ZPYdVt8Dn4PWN1KwG3wFfzMO+bgHDAA56c/1Asi640H/LuJzg8J8PTgNJB/AQfAUdIIsiXydCLaCEXnHNii9DcTOL9AMsi7TcPA3kM935OyXfOaaMnUiN/BTBHzX+6+ZX/K+K6mLq/k6UATUtXgC6nr4cd5HQIQIWIOO9gkzI+jWispsDDkDVkcxyHZI50OUtXn4AaSjtXMfGARqVQZj2AHwB8jmTyBMLlFofhduwghQ5bOOsipplzgP1Jq0YNBzYI4pPQnCJBYBigJtGbV2uo23kR8GeluGY8Ax4NrWQX4dkO1hEosAa2AsN8GPpleUrTCFXkhX0ucb4Dp/jrw+58tJIgKswVXcJOnU6qeRjqERvbKu46/JRx2MigiQA0nCTvUqFYV0K9DBhuv8EfJxXseKCaC/nCzg+gy4xlwhPw6kLRNo8Cpw+0o6IadGgJzUsrgf2NIjA3XktAmksdFSG5vzbZrzWpL3gqRLcqoEYEdOZnF9DMxIpTeBDiGSyiQq2nmFtfuIshlJG8zXqwoBansA2AFs8ySjdb8d6FlUsXZ+UsEcVzvbQJx2SvVXNQKsQ43cLWDGK9XIRdlOVyOS6LpIqk6AetO7q3lA84ERUW47bXOJdExfW9mNII25hGYKUjUC9JvCnEI3XTfjSbQymFNKg7P3fMqCq8llyoKrSVj7qMWW1AnQvuAEMCeDk5TW77Wgw9GRblseVk/pW6Av0OA2Vs6b3nHu46z7qBdJqgQspWltic24Tu6nF3XXndEW9Sww3WCqT9hR3epFd4osV/8l+SVFGtEzqRAQHHUZ1w5aItixHB2XNDmzLEK9Rei8AC4RSaKhYgKCoy6DDoMhIKoohLWFVb044TwU/aPAJSFuNCQmoNSoL8Sg/y2VREMiAtIY9bRJShoNsQiopVEvRWDcaIhMQC2OeikSSkXD4pAKkQhw111NOO2gN971EPvLFoVFQ3ALXiCgf5mmtJ6baLZuBjesoIbT69g2BeicUKLBc33JFboXW07Ou4X5e32YlNrUhKjXXJFGPrgrlZGFCGjsweQHPTyv9ccPezKw3CvQU91MPBcBOnSQ2N9GunLZvo7Mu/dd6V2geeAXmAqyLpoX7Mzhtj45W8GpvNcfSQ+BJ0CkZEnk62SwBdi3h349yn13XyC11aBeUv2CJFJyotVgF3CPr7JKhI7ZdoLcClhggAJJE9DBQ6lDCen0VdGAdoD74FtfdcLb7RnwDHgGPAOeAc+AZ8AzkBYD/wDav4BWnQ3ZiAAAAABJRU5ErkJggg==" alt="">
@@ -129,26 +130,36 @@
       </div>
       </a>
     </div>
+    </div>
+
+    <div class="form">
     <form name="contact" method="POST" data-netlify="true" id="my-form">
+      <div class="form_1">
       <p>
-        <label>Your Name: <input type="text" name="name" /></label>
+        <label>Nome
+          <br>
+          <input type="text" name="name" required/></label>
       </p>
       <p>
-        <label>Your Email: <input type="email" name="email" /></label>
+        <label>E-mail
+          <br><input type="email" name="email" id="email" required/></label>
       </p>
       <p>
-        <label>Your Role: <select name="role[]" multiple>
-          <option value="leader">Leader</option>
-          <option value="follower">Follower</option>
-        </select></label>
+        <label>Celular
+          <br><input type="phone" name="phone" id="phone" required/></label>
+      </p>
+      </div>
+      <div class="form_2">
+      <p >
+        <label>Mensagem
+          <br><textarea name="message"></textarea></label>
       </p>
       <p>
-        <label>Message: <textarea name="message"></textarea></label>
+        <button type="submit">Enviar</button>
       </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
+      </div>
     </form>
+    </div>
   </div>
 
   <header>
@@ -184,14 +195,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="js/app.js"></script>
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <script type="text/javascript">
-   $(document).on('click', 'a[href^="#"]', function (event) {
-     event.preventDefault();
+   <script type="text/javascript" src="js/jquery.mask.js"></script>
 
-     $('html, body').animate({
-         scrollTop: $($.attr(this, 'href')).offset().top
-     }, 500);
-   });
-   </script>
 </body>
 </html>

@@ -25,6 +25,19 @@ $("#my-form").submit(function(e) {
   });
 });
 
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});
+
+$(document).ready(function(){
+    $('#phone').mask('(00) 00000-0000');
+    
+});
+
 // $(function () {
 //   $("a.link_arrow").mouseover(function() {
 //     $(".arrow").animate({
