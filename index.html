@@ -7,7 +7,11 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="imgs/fav_icon.png">
+    <link rel="shortcut icon" href="imgs/fav_logo.ico">
+    <meta name="description" content="Kayron Rodrigues Advogado">
+    <meta name="keywords" content="Advogado, Consultoria, Direitos do Consumidor, Direito Eleitoral, Direito Previdenciário, Direitos da Família">
+    <meta name="author" content="Vinícius Grippe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -125,6 +129,26 @@
       </div>
       </a>
     </div>
+    <form name="contact" method="POST" data-netlify="true" id="my-form">
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Your Role: <select name="role[]" multiple>
+          <option value="leader">Leader</option>
+          <option value="follower">Follower</option>
+        </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
   </div>
 
   <header>
