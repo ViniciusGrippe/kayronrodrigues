@@ -21,7 +21,7 @@ $("#my-form").submit(function(e) {
 
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("Thank you!");
+    alert("Mensagem enviada. Obrigado! Você será respondido em breve");
   });
 });
 
@@ -35,7 +35,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 $(document).ready(function(){
     $('#phone').mask('(00) 00000-0000');
-    
+
 });
 
 // $(function () {
