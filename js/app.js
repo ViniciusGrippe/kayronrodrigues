@@ -35,7 +35,15 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 $(document).ready(function(){
     $('#phone').mask('(00) 00000-0000', {clearIfNotMatch: true});
+});
 
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.arrow_top').fadeIn();
+  } else {
+    $('.arrow_top').fadeOut();
+  }
 });
 
 // $(function () {
