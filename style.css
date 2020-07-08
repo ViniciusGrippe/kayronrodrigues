@@ -303,7 +303,7 @@ div.quote{
   margin-top: -120px;
   position: absolute;
   right: 0;
-  padding: 3rem 3rem 4rem 4rem;
+  padding: 3rem 3rem 4rem 3rem;
   border-radius: 40px 0 0 40px;
   background-color: #fff;
   background-image: url(imgs/kayron.jpg);
