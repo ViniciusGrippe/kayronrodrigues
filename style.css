@@ -414,11 +414,19 @@ header div > div{
   ul{
     text-align: center;
   }
-  div.contato > div, div.contato{
+  div.contato > div.cont_links{
     display: grid;
+    margin: 0 auto;
+  }
+  div.contato div.cont_links > div, div.contato div.form form > div{
+    padding: 0 !important;
+    float: none !important;
   }
   div.contato div.cont_links p{
     padding-bottom: 25px;
+  }
+  div.abstract > h1{
+    padding: 0 2rem;
   }
 }
 @media screen and (max-width: 710px) {
